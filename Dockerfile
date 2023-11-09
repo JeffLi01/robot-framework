@@ -13,3 +13,7 @@ RUN { [ ! "$UBUNTU_MIRROR" ] || sed -i "s|http://\(\w*\.\)*archive\.ubuntu\.com/
 RUN DEBIAN_FRONTEND=noninteractive apt-get -q install --no-install-recommends -y python3-pip
 
 RUN python3 -m pip install robotframework==6.1.1
+
+ADD requirements.txt /opt/
+RUN python3 -m pip install -r /opt/requirements.txt
+RUN DEBIAN_FRONTEND=noninteractive apt-get -q install --no-install-recommends -y ipmitool
