@@ -1,4 +1,4 @@
-robotframework
+robotframework==6.1.1
 requests
 robotframework-requests
 robotframework-jsonlibrary
