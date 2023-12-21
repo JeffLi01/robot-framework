@@ -9,7 +9,7 @@ RUN { [ ! "$UBUNTU_MIRROR" ] || sed -i "s|http://\(\w*\.\)*archive\.ubuntu\.com/
     apt-get -q update && \
     apt-get -q dist-upgrade -y && \
     DEBIAN_FRONTEND=noninteractive \
-        apt-get -q install --no-install-recommends -y ca-certificates git locales lsb-release python3 python3-pip ipmitool inetutils-ping
+        apt-get -q install --no-install-recommends -y ca-certificates git locales lsb-release python3 python3-pip ipmitool inetutils-ping ssh sshpass
 
 ADD requirements.txt /opt/
 RUN python3 -m pip install -r /opt/requirements.txt
