@@ -2,4 +2,4 @@
 
 ## How to build docker image
 
-`docker build . -t robotframework:6.1.1-2 --build-arg UBUNTU_MIRROR=http://mirrors.tuna.tsinghua.edu.cn/ubuntu/`
+`docker build . -t robotframework:6.1.1-3 --build-arg UBUNTU_MIRROR=http://mirrors.tuna.tsinghua.edu.cn/ubuntu/`
